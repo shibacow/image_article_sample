@@ -3,9 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $base-gray: #aaaaaa;
 div.article_list:nth-of-type(odd) {
-    background: lighten($base-gray, 20%);
+    background: lighten($base-gray, 35%);
 }
 
 div.article_list:nth-of-type(even) {
     background: lighten($base-gray, 30%);
 } 
+a.btn-danger-more {
+   background-color: #FCC;
+}
+

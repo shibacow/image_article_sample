@@ -1,3 +1,11 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$base-gray: #aaaaaa;
+div.article_list:nth-of-type(odd) {
+    background: lighten($base-gray, 20%);
+}
+
+div.article_list:nth-of-type(even) {
+    background: lighten($base-gray, 30%);
+} 

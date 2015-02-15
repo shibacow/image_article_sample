@@ -16,58 +16,58 @@
   <% end %>
 
   <div class="control-group">
-    <%= f.label :name, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :name, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.text_field :name, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:name]) %>
   </div>
   <div class="control-group">
-    <%= f.label :email, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :email, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.text_field :email, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:email]) %>
   </div>
   <div class="control-group">
-    <%= f.label :title, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :title, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.text_field :title, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:title]) %>
   </div>
   <div class="control-group">
-    <%= f.label :comment, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :comment, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.text_area :comment, :class => 'form-control' ,:rows=>6 %>
     </div>
     <%= error_span(@article[:comment]) %>
   </div>
   <div class="control-group">
-    <%= f.label :url, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :url, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.text_field :url, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:url]) %>
   </div>
   <div class="control-group">
-    <%= f.label :delete_key, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :delete_key, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.password_field :delete_key, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:delete_key]) %>
   </div>
   <div class="control-group">
-    <%= f.label :photo, :class => 'col-sm-2 control-label' %>
-    <div class="col-sm-10 controls">
+    <%= f.label :photo, :class => 'col-md-3 control-label' %>
+    <div class="col-md-9 controls">
       <%= f.file_field :photo, :class => 'form-control' %>
     </div>
     <%= error_span(@article[:photo]) %>
   </div>
 
   <div class="control-group">
-    <label class="col-sm-2 control-label"></label>
-    <div class="col-sm-10 controls">
+    <label class="col-md-3 control-label"></label>
+    <div class="col-md-9 controls">
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
       articles_path, :class => 'btn btn-default' %>

@@ -21,13 +21,15 @@
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= article.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:comment) %>:</strong></dt>
-  <dd><%= article.comment %></dd>
+  <dd><%= simple_format(auto_link_to(article.comment)) %></dd>
+  <% if article.valid?  %>
   <dt><strong><%= model_class.human_attribute_name(:url) %>:</strong></dt>
-  <dd><%= article.url %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:delete_key) %>:</strong></dt>
-  <dd><%= article.delete_key %></dd>
+  <dd><%= link_to(article.url,article.url,{:target=>"_blank"}) %></dd>
+  <% end %>
+  <% if article.photo.present? %>
   <dt><strong><%= model_class.human_attribute_name(:photo) %>:</strong></dt>
-  <dd><%= image_tag(article.photo.url(:medium),:class=>"img-thumbnail") if article.photo.present? %></dd>
+  <dd><%= image_tag(article.photo.url(:medium),:class=>"img-thumbnail") %></dd>
+  <% end %>
 </dl>
 
 <%= link_to t('.edit', :default => t("helpers.links.edit")),

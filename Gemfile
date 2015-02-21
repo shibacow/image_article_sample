@@ -49,3 +49,4 @@ gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで
 gem 'twitter-bootstrap-rails' # Bootstrapの本体
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'chronic'

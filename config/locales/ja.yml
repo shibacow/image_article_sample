@@ -22,7 +22,7 @@
 ja:
   activerecord:
     models:
-     ariticle: Dude
+     article: 家庭内掲示板
     attributes:
      article:
       name: "名前"
@@ -31,3 +31,4 @@ ja:
       comment:  "本文"
       photo:   "写真(もしあれば)"
       url:    "リンク(もしあれば)"
+      created_at: "投稿日"

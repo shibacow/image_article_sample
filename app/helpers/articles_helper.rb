@@ -3,6 +3,7 @@ require 'uri'
 module ArticlesHelper
   def auto_link_to(text)
     result=[]
+    return result if text.blank?
     text.split("\n").each { |line|
       URI.extract(line,["http","https"]).each do |uri|
         line=link_to(uri,uri)
